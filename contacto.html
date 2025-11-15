@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ficha personal - Contacto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    
+    <header class="site-header">
+        <div class="top-bar">
+            <h2 class="logo-text">FICHA PERSONAL</h2>
+
+            <nav class="main-nav">
+                <button class="nav-toggle" id="nav-toggle">☰</button>
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="accessibility-controls">
+                <button id="theme-toggle" class="btn-secondary">Modo</button>
+            </div>
+        </div>
+    </header>
+
+    
+    <main class="main-content">
+        <h1 class="ficha-title">Lucas Manuel Muras</h1>
+
+        
+        <section class="contact-section">
+            <div class="contact-form-container">
+            <form id="contact-form" novalidate>
+
+                <div class="form-group">
+                    <label for="nombre">Nombre y apellido:</label>
+                    <input type="text" id="nombre">
+                    <span class="error-message" id="nombre-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="edad">Edad:</label>
+                    <input type="text" id="edad">
+                    <span class="error-message" id="edad-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="comentario">Comentario:</label>
+                    <textarea id="comentario" rows="4"></textarea>
+                    <span class="error-message" id="comentario-error"></span>
+                </div>
+
+                <div style="display:flex; justify-content:center; gap:20px;">
+                    <button id="submit-btn" class="btn-primary">Enviar</button>
+                    <button id="clear-btn" type="button" class="btn-primary">Borrar</button>
+                </div>
+
+                <p id="form-status"></p>
+            </form>
+            </div>
+        </section>
+
+    </main>
+
+    
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <span class="footer-logo">UADE</span>
+            </div>
+            <div class="footer-center">
+                <span>Todos los derechos reservados</span>
+            </div>
+            <div class="footer-right">
+                <a href="https://github.com/lucasmuras" target="_blank" class="footer-github">🐙 GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html></html>
